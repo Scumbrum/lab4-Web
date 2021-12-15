@@ -1,0 +1,251 @@
+.main-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+.number{
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+    word-wrap: break-word;
+    max-height: 100%;
+    max-width: 100%;
+}
+.text{
+    margin:10px;
+    background: white;
+    border: 2px solid black;
+    line-height: 120%;
+    min-width: 100px;
+    max-width: 300px;
+    word-wrap: break-word;
+    padding: 2px;
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+}
+.top-segment{
+    grid-column: 1/5;
+    grid-row: 1/4;
+    display: flex;
+    padding: 50px 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: #c6d9f1;
+    border: 2px solid black;
+}
+.left-segment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 4/9;
+    background: #fde9d9;
+    border: 2px solid black;
+}
+.middle-segment{
+    background: #eaf1dd;
+    grid-column: 2/4;
+    grid-row:4/5;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-segment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fde9d9;
+    grid-column: 4/5;
+    grid-row: 4/10;
+    border: 2px solid black;
+}
+.argument {
+    font-size: 36px;
+}
+.divide {
+    font-size: 36px;
+}
+.execute{
+    grid-column: 1/3;
+    max-width: 200px;
+    height: fit-content;
+    line-height: 150%;
+    font-size: 36px;
+    justify-self: center;
+}
+.output{
+    display: block;
+}
+.under-middle-segment{
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 2/4;
+    grid-row: 5/9;
+    background: white;
+    word-wrap: break-word;
+    padding: 20px;
+    border: 2px solid black;
+}
+.under-left-segment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/4;
+    grid-row: 9/10;
+    background: #eaf1dd;
+    border: 2px solid black;
+}
+.bottom-segment{
+    padding: 50px 10px;
+    grid-row:10/13;
+    grid-column: 1/5;
+    background: #c6d9f1;
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    background: lightskyblue;
+    border-radius: 5%;
+    color: black;
+    width:200px;
+    justify-self: center;
+    line-height: 200%;
+}
+a:hover{
+    background: darkblue;
+    color: white;
+}
+.nav-page1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+}
+.nav-page2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+.nav-page3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+}
+.nav-page4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+.nav-page5{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    text-align: center;
+}
+.cucumber{
+    width: 250px;
+    height: 150px
+}
+.case {
+    display: block;
+    text-transform: none;
+}
+input[type=radio] {
+    width: 2em;
+    height: 2em;
+}
+.imageform{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.innerbox{
+    width: fit-content;
+    margin-right: 10px;
+}
+.inner{
+    display: block;
+    font-size: 36px;
+    margin: 0 0 5px 5px;
+}
+.pusher{
+    font-size: 36px;
+    margin: 0 5px 5px 0 ;
+}
+.imagebox {
+    display: flex;
+    align-items: center;
+}
+.work {
+    width: calc(50% + 10px);
+    height: calc(70% + 50px);
+}
+.controls{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+.canvas {
+    background: url("../media/Без\ имени-1.jpg");
+    display: block;
+    width: 100%;
+    height: calc(100% - 50px);
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 5px solid #900;
+    
+}
+.square{
+    height: 10px;
+    width: 10px;
+    background: #900;
+    display: none;
+}
+.controls button{
+    display: none;
+}
+.controls button:last-child{
+    display: inline-block;
+}
+.Record {
+    width: 40vw;
+}
+.Play, .Save {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.controller span{
+    display: block;
+}

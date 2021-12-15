@@ -1,0 +1,1 @@
+export default URL = "https://vladlab4.herokuapp.com/"
